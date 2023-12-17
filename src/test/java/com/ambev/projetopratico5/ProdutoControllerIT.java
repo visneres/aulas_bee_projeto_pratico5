@@ -79,7 +79,7 @@ public class ProdutoControllerIT {
                 .andExpect(status().isOk())
                 .andReturn();
 
-        result = mockMvc.perform(MockMvcRequestBuilders.delete("/api/produtos/{name}", produtoDTO.getNome()))
+        result = mockMvc.perform(MockMvcRequestBuilders.delete("/api/produtos/{nome}", produtoDTO.getNome()))
                 .andExpect(status().isOk())
                 .andReturn();
 
